@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="about__container container grid">
         <img
-          src="https://avatars.githubusercontent.com/u/81626732?s=400"
+          src="https://woobro.design/thumbnails/42/website-speed-optimisation-vector-illustration-5de242cf65d70.png"
           alt=""
           className="about__img"
         />
