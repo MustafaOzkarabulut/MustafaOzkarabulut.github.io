@@ -9,16 +9,16 @@ import ScrollUp from "./Components/ScrollUp";
 import Skills from "./Components/Skills";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ReactGa from "react-ga";
+import ReactGA from 'react-ga';
 import { useEffect } from "react";
 
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize("G-LRZVMK6RJK");
-
-    ReactGa.pageview("/");
-  }, []);
+    const TRACKING_ID = "UA-192267248-1"; // OUR_TRACKING_ID
+    ReactGA.initialize(TRACKING_ID);
+    
+})
 
   return (
     <div className="">

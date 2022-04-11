@@ -5,8 +5,14 @@ import {
   UilServerAlt,
   UilMobileAndroidAlt,
 } from "@iconscout/react-unicons";
+import useAnalyticsEventTracker from './Analytics/useAnalyticsEventTracker';
+
+
 
 export default function Skills() {
+
+  const gaEventTracker = useAnalyticsEventTracker('Skills');
+
   const [state, setState] = useState({
     openned: 0,
   });
@@ -40,7 +46,7 @@ export default function Skills() {
       <div>
         {/* Skills 1 */}
         <div className={`skills_content ${getClassName(1)}`}>
-          <div className="skills__header" onClick={() => handleSetOpen(1)}>
+          <div className="skills__header" onClick={() => handleSetOpen(1 ,gaEventTracker('Frontend Developer'))}>
             <UilBracketsCurly className="skills__icon" />
 
             <div>
@@ -108,7 +114,7 @@ export default function Skills() {
 
       {/* Skills 3 */}
       <div className={`skills_content ${getClassName(3)}`}>
-        <div className="skills__header" onClick={() => handleSetOpen(3)}>
+        <div className="skills__header" onClick={() => handleSetOpen(3 ,gaEventTracker('Backend Developer'))}>
           <UilServerAlt className="skills__icon" />
 
           <div>

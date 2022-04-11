@@ -4,8 +4,11 @@ import {
   UilBriefcaseAlt,
   UilCalendarAlt,
 } from "@iconscout/react-unicons";
+import useAnalyticsEventTracker from './Analytics/useAnalyticsEventTracker';
 
 export default function Qualification() {
+  const gaEventTracker = useAnalyticsEventTracker('Qualification');
+
   const [state, setState] = useState({
     active: "",
   });
@@ -31,7 +34,7 @@ export default function Qualification() {
             className={`qualification__button button__flex ${getActiveClass(
               "education"
             )}`}
-            onClick={() => handleActive("education")}
+            onClick={() => handleActive("education",gaEventTracker('Education'))}
           >
             <UilGraduationCap className="qualification__icon" /> Education
           </div>
@@ -39,7 +42,7 @@ export default function Qualification() {
             className={`qualification__button button__flex ${getActiveClass(
               "work"
             )}`}
-            onClick={() => handleActive("work")}
+            onClick={() => handleActive("work",gaEventTracker('Work'))}
           >
             <UilBriefcaseAlt className="qualification__icon" /> Work
           </div>

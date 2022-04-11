@@ -1,7 +1,12 @@
 import React from "react";
 import { UilArrowRight } from "@iconscout/react-unicons";
+import useAnalyticsEventTracker from './Analytics/useAnalyticsEventTracker';
 
 export default function Portfolio() {
+
+  const gaEventTracker = useAnalyticsEventTracker('Portfolio');
+  
+
   return (
     <section className="section portfolio" enum-data={5}>
       <h2 className="section__title">Portfolio</h2>
@@ -31,6 +36,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="button button__flex button__small portfolio__button"
                 rel="noreferrer"
+                onClick={()=>gaEventTracker('Hrms Frontend')}
               >
                 Demo
                 <UilArrowRight className="button__icon" />
@@ -59,6 +65,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="button button__flex button__small portfolio__button"
                 rel="noreferrer"
+                onClick={()=>gaEventTracker('Hrms Backend')}
               >
                 Demo
                 <UilArrowRight className="button__icon" />
@@ -87,6 +94,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="button button__flex button__small portfolio__button"
                 rel="noreferrer"
+                onClick={()=>gaEventTracker('Northwind Frontend')}
               >
                 Demo
                 <UilArrowRight className="button__icon" />
@@ -115,6 +123,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="button button__flex button__small portfolio__button"
                 rel="noreferrer"
+                onClick={()=>gaEventTracker('Northwind Backend')}
               >
                 Demo
                 <UilArrowRight className="button__icon" />
@@ -144,6 +153,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="button button__flex button__small portfolio__button"
                 rel="noreferrer"
+                onClick={()=>gaEventTracker('Video Downloader')}
               >
                 Demo
                 <UilArrowRight className="button__icon" />

@@ -7,8 +7,12 @@ import {
 } from "@iconscout/react-unicons";
 import { toast } from "react-toastify";
 import emailjs from "emailjs-com";
+import useAnalyticsEventTracker from './Analytics/useAnalyticsEventTracker';
 
 export default function Contact() {
+
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
+
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -130,7 +134,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <button className="button button__flex" type="submit">
+          <button className="button button__flex" type="submit" onClick={()=>gaEventTracker('Email')}>
             Send Message
             <UilMessage className="button__icon" />
           </button>
