@@ -12,7 +12,7 @@ export default function Contact() {
   const [state, setState] = useState({
     name: "",
     email: "",
-    project: "",
+    subject: "",
     message: "",
   });
 
@@ -110,9 +110,10 @@ export default function Contact() {
           </label>
           <input
             type="text"
-            name="project"
+            name="subject"
+            id="subject"
             className="contact__input"
-            onChange={(e) => handleChange(e.target.value, "project")}
+            onChange={(e) => handleChange(e.target.value, "subject")}
           />
         </div>
         <div className="contact__content">
