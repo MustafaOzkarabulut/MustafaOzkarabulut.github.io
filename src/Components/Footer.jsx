@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { UilLinkedin, UilInstagram, UilGithub } from "@iconscout/react-unicons";
+import { UilLinkedin, UilInstagram, UilGithub, UilYoutube, } from "@iconscout/react-unicons";
 
 export default function Footer() {
   return (
@@ -29,12 +29,12 @@ export default function Footer() {
 
         <div className="footer__socials">
           <a
-            href="https://www.linkedin.com/in//"
+            href="https://www.youtube.com/channel/UC4_Y573ksLfpVG2VgPfh7jQ"
             target="_blank"
             className="footer__social"
             rel="noreferrer"
           >
-            <UilLinkedin />
+            <UilYoutube />
           </a>
           <a
             href="https://www.instagram.com/mustafa_ozkarabulut/"

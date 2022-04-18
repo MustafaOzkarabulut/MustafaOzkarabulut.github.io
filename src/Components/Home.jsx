@@ -6,6 +6,7 @@ import {
   UilMessage,
   UilMouseAlt,
   UilArrowDown,
+  UilYoutube,
 } from "@iconscout/react-unicons";
 import { Link } from "react-scroll";
 
@@ -16,12 +17,12 @@ export default function Home() {
       <div className="home__content grid">
         <div className="home__social">
           <a
-            href="https://www.linkedin.com/in//"
+            href="https://www.youtube.com/channel/UC4_Y573ksLfpVG2VgPfh7jQ"
             target="_blank"
             rel="noreferrer"
             className="home__social-icon"
           >
-            <UilLinkedinAlt />
+            <UilYoutube />
           </a>
           <a
             href="https://github.com/MustafaOzkarabulut"
