@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="about__container container grid">
         <img
-          src="https://i.hizliresim.com/pepqya3.png"
+          src="https://i.hizliresim.com/hesk9wy.png"
           alt=""
           className="about__img"
         />

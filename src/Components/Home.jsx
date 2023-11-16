@@ -45,7 +45,7 @@ export default function Home() {
         <div className="home__img">
           <img
             className="home__img-img"
-            src="https://woobro.design/thumbnails/37/web-developer-vector-illustration-5de192c700231.png"
+            src="https://i.hizliresim.com/pepqya3.png"
             alt=""
           />
         </div>
