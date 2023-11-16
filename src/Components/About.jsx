@@ -1,5 +1,5 @@
 import React from "react";
-import { UilDownloadAlt } from "@iconscout/react-unicons";
+
 
 export default function About() {
   return (
@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="about__container container grid">
         <img
-          src="https://woobro.design/thumbnails/42/website-speed-optimisation-vector-illustration-5de242cf65d70.png"
+          src="https://i.hizliresim.com/pepqya3.png"
           alt=""
           className="about__img"
         />
